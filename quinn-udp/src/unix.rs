@@ -49,6 +49,7 @@ impl UdpSocketState {
         if cfg!(target_os = "linux")
             || cfg!(target_os = "freebsd")
             || cfg!(target_os = "macos")
+            || cfg!(target_os = "ios")
             || cfg!(target_os = "android")
         {
             cmsg_platform_space +=
